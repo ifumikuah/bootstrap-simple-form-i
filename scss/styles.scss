@@ -1,0 +1,19 @@
+// Variable override
+
+$display-font-family: 'Red Hat Display Variable', sans-serif;
+$font-family-base: 'Red Hat Text Variable', sans-serif;
+
+// Import Bootstrap
+
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom styling
+
+@media (min-width: 768px) { 
+  body {
+    background-color: $body-tertiary-bg !important;
+  }
+  main {
+    width: 700px !important;
+  }
+}

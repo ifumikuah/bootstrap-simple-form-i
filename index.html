@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Responsive BS5 Form</title>
+  </head>
+  <body class="min-vh-100 d-md-flex align-items-md-center">
+    <main class="container p-5 bg-body mx-auto shadow-sm rounded-3">
+      <h1 class="mt-5 mt-md-0 mb-5 text-center">Contact Us</h1>
+      <form id="formContact">
+        <div class="row">
+          <div class="mb-4 col-12 col-md-6">
+            <label class="form-label" for="clientName">Full Name</label>
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              id="clientName"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div class="mb-4 col-12 col-md-6">
+            <label class="form-label" for="clientMail">Email</label>
+            <input
+              class="form-control"
+              type="email"
+              name="mail"
+              id="clientMail"
+              placeholder="johndoe@mail.com"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="form-label" for="clientPhone">Phone</label>
+          <div class="input-group">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              id="buttonTelcode"
+            >Select Country</button>
+            <ul class="dropdown-menu" id="dropdownTelcode">
+              <li data-country="gb"><a class="dropdown-item" href="#">England (+44)</a></li>
+              <li data-country="id"><a class="dropdown-item" href="#">Indonesia (+62)</a></li>
+              <li data-country="zh">
+                <a class="dropdown-item" href="#"
+                  >People's Republic of China (+86)</a
+                >
+              </li>
+              <li data-country="ru">
+                <a class="dropdown-item" href="#">Russian Federation (+7)</a>
+              </li>
+              <li data-country="us"><a class="dropdown-item" href="#">United States (+1)</a></li>
+            </ul>
+            <input
+              type="tel"
+              class="form-control"
+              id="clientPhone"
+              name="phone"
+              aria-label="Text input with dropdown button"
+              data-telcode="gb"
+            />
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="form-label" for="clientMsg"
+            >Additional message for us?</label
+          >
+          <textarea
+            style="resize: none"
+            class="form-control"
+            rows="5"
+            name="message"
+            id="clientMsg"
+            placeholder="Leave a message!"
+          ></textarea>
+        </div>
+        <div class="d-grid">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

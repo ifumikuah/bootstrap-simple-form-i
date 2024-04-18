@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-simple-form-i",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.75.0",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@fontsource-variable/red-hat-display": "^5.0.20",
+    "@fontsource-variable/red-hat-text": "^5.0.18",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3"
+  }
+}
